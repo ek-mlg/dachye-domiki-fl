@@ -1,0 +1,114 @@
+.infoContainer {
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px 5px rgba(34, 60, 80, 0.1);
+    background: radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, #f6f6f6 68% 70%, #0000 72%) 21px 21px/calc(2*21px) calc(2 * 21px),
+    radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, #f6f6f6 68% 70%, #0000 72%) 21px 21px/calc(2*21px) calc(2 * 21px),
+    radial-gradient(35.36% 35.36% at 100% 25%, #0000 66%, #f6f6f6 68% 70%, #0000 72%) 0 0/calc(2*21px) calc(2 * 21px),
+    radial-gradient(35.36% 35.36% at 0 75%, #0000 66%, #f6f6f6 68% 70%, #0000 72%) 0 0/calc(2*21px) calc(2 * 21px),
+    repeating-conic-gradient(#ffffff 0 25%, #0000 0 50%) 0 0/calc(2*21px) calc(2 * 21px),
+    radial-gradient(#0000 66%, #f6f6f6 68% 70%, #0000 72%) 0 calc(21px/2)/21px 21px #ffffff;
+    width: 40%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .textContainer {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+
+      .textTitle {
+        color: #333;
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+        text-align: center;
+      }
+
+      .text {
+        color: #777;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+      }
+
+      .telIconsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .tel {
+          margin: 0;
+          font-family: Rubik, sans-serif;
+          letter-spacing: -0.8px;
+          font-weight: 600;
+          font-size: 30px;
+          color: #26B451;
+          text-decoration: none;
+          box-sizing: border-box;
+          &:hover {
+            color: #21cc55;
+          }
+        }
+      }
+
+      .infoText {
+        color: #777;
+        font-family: Montserrat, sans-serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+        position: relative;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background-color: #21cc55;
+          transition: width 0.2s ease-in-out;
+          position: absolute;
+          top: 20px;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  @media (max-width: 1340px) {
+    width: 100%;
+  }
+  }
+
+.mapContainer {
+  width: 60%;
+  .map {
+    height: 450px;
+    background-color: bisque;
+    @media (max-width: 1340px) {
+      margin-top: 60px;
+    }
+  }
+  @media (max-width: 1340px) {
+    width: 100%;
+  }
+}
+
+  @media (max-width: 1340px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 90%;
+    flex-direction: column;
+  }

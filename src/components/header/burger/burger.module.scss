@@ -1,0 +1,112 @@
+.burger {
+  height: 40px;
+  width: 40px;
+
+  .burgerNavItems {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    height: 110vh;
+    width: 80%;
+    background: #fff;
+    transform: translate(1150px, 0px);
+    transition: 0.7s;
+
+  }
+
+  .show {
+    border-top: 1px solid #eaecee;
+    transform: translate(0, 0);
+    z-index: 1;
+  }
+
+  .background {
+    display: flex;
+    height: 0;
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 0;
+  }
+
+  .backgroundShow {
+    height: 110vh;
+    opacity: 0.5;
+    background: #000;
+  }
+}
+
+
+// Burger
+
+$bar-width: 30px;
+$bar-height: 2px;
+$bar-spacing: 8px;
+
+.menuWrapper {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: $bar-width;
+  height: $bar-height + $bar-spacing * 2;
+  cursor: pointer;
+}
+
+.hamburgerMenu,
+.hamburgerMenu:after,
+.hamburgerMenu:before {
+  width: $bar-width;
+  height: $bar-height;
+}
+
+.hamburgerMenu {
+  position: relative;
+  transform: translateY($bar-spacing);
+  background: #26B451;
+  transition: all 0ms 300ms;
+
+  &.animate {
+    background: rgba(229, 16, 16, 0);
+  }
+}
+
+.hamburgerMenu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: $bar-spacing;
+  background: #26B451;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburgerMenu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: $bar-spacing;
+  background: #26B451;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburgerMenu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburgerMenu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}

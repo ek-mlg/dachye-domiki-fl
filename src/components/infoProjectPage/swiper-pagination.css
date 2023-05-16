@@ -1,0 +1,20 @@
+.swiper-button-prev {
+    color: #21cc55;
+}
+
+.swiper-button-next {
+    color: #21cc55;
+}
+.swiper-pagination-bullet-active {
+    background: #21cc55 !important;
+}
+
+@media (max-width: 1340px) {
+    .swiper-slide img {
+        object-fit: contain;
+    }
+
+    .mySwiper2 {
+        height: 280px;
+    }
+}

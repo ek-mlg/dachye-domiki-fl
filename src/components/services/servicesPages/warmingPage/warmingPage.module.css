@@ -1,0 +1,120 @@
+.block {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1240px;
+    padding-top: 145px;
+    padding-bottom: 120px;
+}
+
+.title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Rubik, sans-serif;
+    letter-spacing: -0.8px;
+    font-weight: 400;
+    font-size: 46px;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.descriptionContainer {
+    height: auto;
+    width: 100%;
+}
+
+.descriptionTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.list {
+    margin-left: 20px;
+}
+
+.descriptionText {
+    margin: 0;
+    color: #777;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.imgContainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.priceContainer {
+    margin-top: 60px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textSecondContainer {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    color: #777;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.text {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin: 0;
+    font-family: Rubik, sans-serif;
+    letter-spacing: -0.8px;
+    font-weight: 600;
+    font-size: 26px;
+    color: #333;
+}
+
+
+@media (max-width: 1340px) {
+    .container {
+        width: 90%;
+        padding-top: 115px;
+        padding-bottom: 60px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .list {
+        margin-left: 0;
+    }
+
+    .priceContainer {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
